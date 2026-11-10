@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transition property - ULD</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Elms+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <style>
+        body{
+            border-left: #0f172a 2px solid; border-right: #38bdf8 2px solid;
+        }
+        *{
+  font-family: "Elms Sans", sans-serif; box-sizing: border-box;
+  text-transform: capitalize;
+
+        }
+        .poi{
+            margin: 0px 5%;
+        }
+        a{
+            text-decoration: none;
+        }
+        header{
+            position: sticky; top:10px;
+            background-color: white;
+            border:2px solid #0f172a; border-radius: 20px; padding: 20px; box-sizing: border-box; box-shadow: 3px 3px 10px #0f172a ;
+            width: 90%; 
+            h4{
+                display: inline-block;
+            }
+            a{
+                background-color: #0f172a; border-radius: 15px; border: 2px white solid; outline: 2px double #0f172a; padding: 10px; box-sizing: border-box; color: white; text-decoration:wavy;
+                position: absolute; right: 30px; top:10px;
+                margin: 1em 0em;
+            }
+
+        }
+        .tr{
+            border-bottom: #0f172a 2px solid; width: fit-content;
+        }
+        .example{
+            .exp{
+                p{
+                    display: inline-block; font-size: 30px;margin-right: 10px;
+                }
+                a{
+                    display: inline-block; font-size: 25px; border: 2px #0f172a solid; padding: 10px; border-radius: 20px; color: #0f172a; font-weight: bolder;
+                }a:hover{
+                    background-color: #0f172a; color: white; 
+                } 
+            }
+        }
+        .afexample{
+            .afex{
+            p{
+                    display: inline-block; font-size: 30px;margin-right: 10px;
+                }
+                            a{
+                    display: inline-block; font-size: 25px; border: 2px #0f172a solid; padding: 10px; border-radius: 20px; color: #0f172a; font-weight: bolder;
+                }a:hover{
+                    background-color: #0f172a; color: white;  transition: 3s all ease-out;
+                } 
+
+            }
+        }
+        .notice{
+            h4{
+                background-color: #38bdf8; border: 2px solid white; outline: 2px solid #38bdf8; border-radius: 20px; padding: 20px; width: fit-content; box-sizing: border-box;color: white;display: inline-block;
+            }
+            p{
+                display: inline-block; border: 3px solid #38bdf8; padding: 20px; border-radius: 20px; font-weight: bolder; color: #38bdf8;
+                span{
+                    background-color: #38bdf8; margin: 0px 2px; color: white; border-radius:10px ; padding: 10px;
+                }
+            }
+        }
+        .pex{
+            border: 2px solid #0f172a ; padding: 10px ; box-sizing: border-box; border-radius: 20px;
+            h4{
+                color:#0f172a;border-bottom:solid 3px #0f172a ; width: fit-content; font-weight: bold; letter-spacing: .8px; word-spacing: 3px; font-size: 30px;
+            }
+            p{
+                color:#0f172a; font-size: 20px; span{
+                    background-color: #0f172a; border-radius: 10px; color: #38bdf8; font-weight: bolder; padding: 2px 4px; box-sizing: border-box;
+                }
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="poi">
+            <header>
+        <div class="logo"> 
+        <h4> ULD - Transition </h4>
+        <a href="books Ar.html"> arabic </a>
+        </div>
+    </header>
+    <h1 class="tr">Before Transition property example  </h1>
+    <div class="example">
+        <div class="exp">
+        <p> click a link </p> 
+        <a href="#"> click me </a>
+    </div>
+        <div class="notice">
+        <h4>Notice</h4> <p class="not">Before adding the <span> transition </span> , you noticed how the hover effect happens immediately without delay</p>
+        </div>
+    </div>
+    <h1 class="tr">After Transition property example  </h1>
+    <div class="afexample">
+    <div class="afex">
+        <p> click a link </p> 
+        <a href="#"> click me </a>
+    </div>
+        <div class="notice">
+        <h4>Notice</h4> <p class="not">"After adding the <span>transition</span>, you notice how the hover effect becomes smooth without any sudden change."</p>
+        </div>
+        <div class="pex">
+            <h4> What is CSS Transition? </h4>
+            <p>The <span>Transition</span> property allows you to change property values smoothly over a given duration. Instead of the element changing its state instantly (like jumping from one color to another), the browser creates an animation effect over the specified time (e.g., <span>0.4s</span> 0.4s), making the user interface feel much smoother and more professional.</p>
+        </div>
+
+    </div>
+</body>
+</html>
